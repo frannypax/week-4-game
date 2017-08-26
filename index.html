@@ -6,7 +6,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week4HomeworkStarWarsRPGGame</title>
+  <title>Week4Homework-Crystal Collector</title>
    <!-- reset css -->
   <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
    <!-- css -->
@@ -19,70 +19,76 @@
 </head>
 
 <body>
-	<div class="container" style = "background-color:#eeeeee">
-		<div class="row" >
-			<div class="col-sm-12 well" style = "height:auto; background-image: url(assets/images/starWars.jpg")>
-			<div class="row text-center">
-				<h1 class="text-center">Star Wars RPG !</h1>
-				<div class="col-sm-2 well well-sm characterOptions" style="border: 3px solid #bbbbbb">
-					<h5 class="text-center">Obi-Wan kenobi</h5>
-					<a href="#"><img src="assets/images/obi.jpg" class="img-responsive" alt="Obi-Wan kenobi"></a>
-					<h6 class="text-center">120</h6>
+	
+	<div class="row">
+		<div class="container" style = "background-color:#dddddd">
+			<div class="col-sm-12 well">
+				<div class="row">
+					<div class="col-sm-8 well text-center">
+						<h1>Crystal Collectors!</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 well text-center justify lead">
+						<p>	The aim of the game is to add up the crystal values to exactly match the value of the randomly selected number that appears at the begining of the game.
 
-				</div>
-				<div class="col-sm-2 well well-sm characterOptions" style="border: 3px solid #bbbbbb">
-					<h5 class="text-center">Luke Skywalker</h5>
-					<a href="#"><img src="assets/images/luke.jpg" class="img-responsive" alt="Luke Skywalker"></a>
-					<h6 class="text-center">100</h6>
-					
-				</div>
-				<div class="col-sm-2 well well-sm characterOptions" style="border: 3px solid #bbbbbb">
-					<h5 class="text-center">Darth Sidious</h5>
-					<a href="#"><img src="assets/images/darthSidious.jpg" class="img-responsive" alt="Darth Sidious"></a>
-					<h6 class="text-center">150</h6>
-					
-				</div>
-				<div class="col-sm-2 well well-sm characterOptions" style="border: 3px solid #bbbbbb">
-					<h5 class="text-center">Darth Maul</h5>
-					<a href="#"><img src="assets/images/darthMaul.jpg" class="img-responsive" alt="Darth Maul"></a>
-					<h6 class="text-center">180</h6>
-					
-				</div>
-			</div>
-			<div class="row">
-				<button class="btn btn-primary btn-lg grow-button" style = "margin-bottom: 20px"><span></span> ATTACK</button>
+							Click on a crystal to add a specific amount of points to your total score.
 
-			</div>
-			<div class="row">
-				<p class="lead" style = "margin-bottom: 10px">Defender</p>
-			</div>
-			<div class="row">
-				<div class="col-sm-3 well well-sm" id="myPlayer">
-					
-				</div>
-				<div class="col-sm-2 well well-sm">
-					
-				</div>
-				
-				<div class="col-sm-3 well well-sm">
-					
-				</div>
-			</div>
+							You win the game by matching your total score to the random number. 
 
-		
-				
+							You lose the game if your total score goes above the random number.
+						</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-5 well">
+						<h3>Number: <span id="computerNumber"></span></h3>
+						
+					</div>
+					<div class="col-sm-3 well">
+						<h3>Wins: <span id="wins"></span></h3>
+
+						<h3>Losses: <span id="losses"></span></h3>
+						
+					</div>
+				</div>
+				<div class="row crystals">
+					<div class="col-sm-2 well" id="red">
+						
+					</div>
+					<div class="col-sm-2 well" id="yellow">
+						
+					</div>
+					<div class="col-sm-2 well" id="green">
+						
+					</div>
+					<div class="col-sm-2 well" id="blue">
+						
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8 well">
+					<h3>Total Score: <span id="totalScore"></span></h3>
+						
+					</div>
+				</div>
+
 			</div>
 		</div>
+
+		
 	</div>
+	
 
 	<!-- JQuery -->
-	<script
+	<!-- <script
 		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
 		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-		crossorigin="anonymous">
-	</script>
-  	<!-- Javascript -->
-	<script type="text/javascript" src="./assets/javascript/game.js" ></script>
+		crossorigin="anonymous"
+	</script> -->
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  		<!-- Javascript -->
+	<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 
 </html>
